@@ -29,10 +29,12 @@ public class PlayerMovement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(horizontalInput, Mathf.Abs(Input.GetAxis("Fire3")) > 0 ? -Input.GetAxis("Fire3") : Input.GetAxis("Jump"), verticalInput);
         rigidbody.AddForce(movement);
+        //aim
         float horizontalRotation = Input.GetAxis("Mouse X");
         float verticalRotation = Input.GetAxis("Mouse Y");
         transform.Rotate(Vector3.up, horizontalRotation * Time.deltaTime * 100f, Space.World);
         transform.Rotate(Vector3.left, verticalRotation * Time.deltaTime * 100f, Space.Self);
+        //movement tilt
         float tiltX = verticalInput * tiltAngle * 2;
         float tiltZ = -horizontalInput * tiltAngle * 2;
         Quaternion targetTilt = Quaternion.Euler(tiltX, 0, tiltZ);
