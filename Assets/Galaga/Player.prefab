@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2065630ea557da94498225d04223c4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 5186270880333075011}
   lineRenderer: {fileID: 0}
   bulletPrefab: {fileID: 2231336043158255108, guid: 9a8a7192a103d244daafd04adb75b299, type: 3}
   tiltAngle: 10

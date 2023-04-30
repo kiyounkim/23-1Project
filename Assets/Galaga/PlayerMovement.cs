@@ -38,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(Vector3.left, verticalRotation * Time.deltaTime * 100f, Space.Self);
         */
         //movement
-        /*
+        
         float tiltX = verticalInput * tiltAngle * 2;
         float tiltZ = -horizontalInput * tiltAngle * 2;
         Quaternion targetTilt = Quaternion.Euler(tiltX, 0, tiltZ);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetTilt, tiltSpeed * Time.deltaTime);
-        */
+        
 
         if(Input.GetKeyDown(KeyCode.LeftControl)) rigidbody.velocity = Vector3.zero;
         // Add this line of code to show the ray in the game
