@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject particle;
     // Start is called before the first frame update
     void Start()
     {
@@ -11,13 +12,16 @@ public class Bullet : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Wall") Destroy(gameObject);
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Wall") {
+            //play particle
+            if(collision.gameObject.tag == "Enemy")
+            {
+                particle = Instantiate(particle, transform.position, Quaternion.identity);
+                particle.GetComponent<ParticleSystem>().Play();
+            }
+            Destroy(gameObject);
+        }
     }
 }
