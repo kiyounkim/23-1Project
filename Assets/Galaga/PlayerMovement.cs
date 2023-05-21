@@ -16,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         lineRenderer = gameObject.AddComponent<LineRenderer>();
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
+        lineRenderer.startWidth = 0.05f;
+        lineRenderer.endWidth = 0.05f;
         lineRenderer.material.color = Color.red;
         
     }
@@ -52,6 +52,14 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)){
             Instantiate(bulletPrefab, transform.position + transform.forward * 2, transform.rotation);
+        }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            //stop movement
+            rigidbody.velocity = Vector3.zero;
         }
     }
 }

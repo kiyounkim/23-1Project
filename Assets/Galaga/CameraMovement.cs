@@ -7,6 +7,9 @@ public class CameraMovement : MonoBehaviour
     public Transform target;
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
+    void Start(){
+        target = GameObject.Find("Player").transform;
+    }
 
     void LateUpdate()
     {

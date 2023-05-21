@@ -18,6 +18,6 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Wall") Destroy(gameObject);
     }
 }
