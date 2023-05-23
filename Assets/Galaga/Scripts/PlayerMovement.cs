@@ -10,6 +10,13 @@ public class PlayerMovement : MonoBehaviour
     public GameObject bulletPrefab;
     public float tiltAngle = 10f;
     public float tiltSpeed = 10f;
+    //public color
+    public Color color;
+    public GameObject mainThrust;
+    public GameObject leftThrust;
+    public GameObject rightThrust;
+    public float cooltime = 0.5f;
+    private float lastShot = 0.0f;
     
     // Start is called before the first frame update
     void Start()
@@ -19,12 +26,14 @@ public class PlayerMovement : MonoBehaviour
         lineRenderer.startWidth = 0.05f;
         lineRenderer.endWidth = 0.05f;
         lineRenderer.material.color = Color.red;
-        
+        mainThrust.GetComponent<ParticleSystem>().Play();
+        leftThrust.GetComponent<ParticleSystem>().Play();
+        rightThrust.GetComponent<ParticleSystem>().Play();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(horizontalInput, Mathf.Abs(Input.GetAxis("Fire3")) > 0 ? -Input.GetAxis("Fire3") : Input.GetAxis("Jump"), verticalInput);
@@ -42,24 +51,22 @@ public class PlayerMovement : MonoBehaviour
         float tiltX = verticalInput * tiltAngle * 2;
         float tiltZ = -horizontalInput * tiltAngle * 2;
         Quaternion targetTilt = Quaternion.Euler(tiltX, 0, tiltZ);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetTilt, tiltSpeed * Time.deltaTime);
+        transform.rotation= Quaternion.Slerp(transform.rotation, targetTilt, Time.deltaTime * tiltSpeed);
         
-
-        if(Input.GetKeyDown(KeyCode.LeftControl)) rigidbody.velocity = Vector3.zero;
-        // Add this line of code to show the ray in the game
         lineRenderer.SetPosition(0, transform.position);
         lineRenderer.SetPosition(1, transform.position + transform.forward * 10);
+        lineRenderer.enabled = true;
+        lineRenderer.material.color = color;
 
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetKeyDown(KeyCode.LeftControl)) rigidbody.velocity = Vector3.zero;
+
+        if(Input.GetMouseButtonDown(0)&&Time.time>lastShot+cooltime){
+            lastShot = Time.time;
             Instantiate(bulletPrefab, transform.position + transform.forward * 2, transform.rotation);
         }
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Wall")
-        {
-            //stop movement
-            rigidbody.velocity = Vector3.zero;
-        }
+
     }
 }
