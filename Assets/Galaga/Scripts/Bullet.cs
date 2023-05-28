@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     {
         //fly forward
         GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+        Destroy(gameObject, 5);
     }
 
     void OnCollisionEnter(Collision collision)
