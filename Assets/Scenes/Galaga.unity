@@ -2249,10 +2249,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8787065123030767126, guid: a838661883d191040803c669b2098625, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8787065123030767126, guid: a838661883d191040803c669b2098625, type: 3}
       propertyPath: followCamera
       value: 
       objectReference: {fileID: 963194227}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class testScene : MonoBehaviour
 {
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,12 @@ public class testScene : MonoBehaviour
     {
         //move the mouse cursor to the center of the screen
         Cursor.lockState = CursorLockMode.Locked;
-        //move the object on x and y axis according to user mouse movement(amount of movement is equal to mouse movement)
+        //rotate the object on x and y axis according to user mouse movement(amount of rotation is equal to mouse movement)
+        transform.rotation *= Quaternion.Euler(Input.GetAxis("Mouse Y") * 2, Input.GetAxis("Mouse X") * 2, 0);
+
+        //transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
+        //the object should always stay 10 units away from the object
+        transform.position = target.transform.position.normalized * 10;
         transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
     }
 }

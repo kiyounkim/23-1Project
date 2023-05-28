@@ -17,9 +17,9 @@ public class PlayerMovement : MonoBehaviour
     public float tiltSpeed = 10f;
     //public color
     public Color color;
-    public GameObject mainThrust;
-    public GameObject leftThrust;
-    public GameObject rightThrust;
+    // public GameObject mainThrust;
+    // public GameObject leftThrust;
+    // public GameObject rightThrust;
     public float cooltime = 0.5f;
     private float lastShot = 0.0f;
     
@@ -31,9 +31,9 @@ public class PlayerMovement : MonoBehaviour
         // lineRenderer.startWidth = 0.05f;
         // lineRenderer.endWidth = 0.05f;
         // lineRenderer.material.color = Color.red;
-        mainThrust.GetComponent<ParticleSystem>().Play();
-        leftThrust.GetComponent<ParticleSystem>().Play();
-        rightThrust.GetComponent<ParticleSystem>().Play();
+        // mainThrust.GetComponent<ParticleSystem>().Play();
+        // leftThrust.GetComponent<ParticleSystem>().Play();
+        // rightThrust.GetComponent<ParticleSystem>().Play();
     }
 
     // Update is called once per frame

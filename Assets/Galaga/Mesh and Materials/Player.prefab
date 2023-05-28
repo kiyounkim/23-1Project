@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4862,7 +4862,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9774,7 +9774,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -14638,7 +14638,6 @@ GameObject:
   - component: {fileID: 8787065123030767125}
   - component: {fileID: 8787065123030767124}
   - component: {fileID: 8787065123030767127}
-  - component: {fileID: 8787065123030767126}
   - component: {fileID: 7587374235061231711}
   m_Layer: 0
   m_Name: Player
@@ -14735,28 +14734,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &8787065123030767126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8787065123030767121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2065630ea557da94498225d04223c4a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followCamera: {fileID: 0}
-  rigidbody: {fileID: 8787065123030767127}
-  bulletPrefab: {fileID: 2231336043158255108, guid: 9a8a7192a103d244daafd04adb75b299, type: 3}
-  tiltAngle: 10
-  tiltSpeed: 10
-  color: {r: 1, g: 0, b: 0, a: 1}
-  mainThrust: {fileID: 8752546207274062580}
-  leftThrust: {fileID: 984196195370918257}
-  rightThrust: {fileID: 1533544319927278325}
-  cooltime: 0.5
 --- !u!114 &7587374235061231711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14770,13 +14747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 8787065123030767127}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 2231336043158255108, guid: 9a8a7192a103d244daafd04adb75b299, type: 3}
   tiltAngle: 10
   tiltSpeed: 10
-  color: {r: 0, g: 0, b: 0, a: 0}
-  mainThrust: {fileID: 0}
-  leftThrust: {fileID: 984196195370918257}
-  rightThrust: {fileID: 1533544319927278325}
   cooltime: 0.5
   aim: {fileID: 0}
 --- !u!1 &8787065123196388288
