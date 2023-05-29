@@ -1,6 +1,4 @@
-# 23-1Project
-
-<h1>🛩️ Galaga 3D 🛩️</h1>
+# 23-1 Project: 🛩️ Galaga 3D 🛩️
 
 ## Topics / Suggestions
 - 고전게임을 다시 재탄생시켜보자
