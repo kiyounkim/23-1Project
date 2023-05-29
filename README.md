@@ -1,4 +1,4 @@
-# 23-1 Project: 🛩️ Galaga 3D 🛩️
+# 23-1 Project: 🛩️ A.D.A.M. 🛩️ (Asteroid Defense Aerial Machine)
 
 ## ❓Topics / Suggestions❓
 - 고전게임을 다시 재탄생시켜보자
