@@ -2092,10 +2092,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7587374235061231711, guid: a838661883d191040803c669b2098625, type: 3}
-      propertyPath: aim
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7587374235061231711, guid: a838661883d191040803c669b2098625, type: 3}
       propertyPath: mainThrust
       value: 
       objectReference: {fileID: 0}

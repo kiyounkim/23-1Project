@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class MainScreen : MonoBehaviour
+public class Tutorial : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,9 +13,10 @@ public class MainScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        //if user presses enter, load the game
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }
