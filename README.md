@@ -6,8 +6,8 @@
 - 3D로 게임을 구현해보자
 
 ## 🧑‍💻Members🧑‍💻
-김기연: 기획, 전투 및 적 시스템 구현, Asset 담당<br>
-이승용: UI와 애니메이션, 에임 및 시스템 구현
+김기연: 기획, 전투 및 적 시스템 구현, Asset 담당. <a href ="https://github.com/kiyounkim"> 깃허브 </a><br>
+이승용: UI와 애니메이션, 에임 및 시스템 구현 <a href ="https://github.com/dtd1232"> 깃허브 </a>
 
 ## 📷In-game Screenshots📷
 ![image](https://github.com/kiyounkim/23-1Project/assets/112357059/19cc2927-fc92-49b7-8a53-947bdc2bf982)
