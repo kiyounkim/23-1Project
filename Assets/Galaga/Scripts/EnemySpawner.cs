@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     public GameObject enemy;
     public int spawnRadius = 25;
-    public float spawnRate = 1.0f;
+    public float spawnRate = 0.5f;
     void Start()
     {
         InvokeRepeating("SpawnEnemy", 0, spawnRate); //spawn enemies every 10 seconds

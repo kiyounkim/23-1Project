@@ -14747,6 +14747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 8787065123030767127}
+  speed: 2
   bulletPrefab: {fileID: 2231336043158255108, guid: 9a8a7192a103d244daafd04adb75b299, type: 3}
   tiltAngle: 10
   tiltSpeed: 10

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7809388701579742456}
   - component: {fileID: 7809388701579742460}
   - component: {fileID: 6791815534289095979}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Enemies
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -113,7 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 4795481568021591124, guid: 16d5c97b076f5b841aecd806e4bfbcf5, type: 3}
   minspeed: 5
-  maxspeed: 25
+  maxspeed: 10
+  timer: 15
 --- !u!54 &6791815534289095979
 Rigidbody:
   m_ObjectHideFlags: 0

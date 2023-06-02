@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public GameObject particle;
     public int minspeed;
     public int maxspeed;
+    public int timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class Enemy : MonoBehaviour
         //give it random rotation
         GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * 10;
         //after 5 seconds, explode
-        Invoke("Explode", 5);
+        Invoke("Explode", timer);
     }
     // Update is called once per frame
     void Update()

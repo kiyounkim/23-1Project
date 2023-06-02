@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int speed;
     // Start is called before the first frame update
     void Start()
     {
         //fly forward
-        GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+        GetComponent<Rigidbody>().AddForce(transform.forward * speed);
         Destroy(gameObject, 5);
     }
 

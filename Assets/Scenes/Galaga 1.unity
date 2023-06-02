@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 165454659}
   - component: {fileID: 165454658}
   - component: {fileID: 165454657}
+  - component: {fileID: 165454660}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -220,6 +221,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165454655}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &165454660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165454655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &223627346
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +245,7 @@ GameObject:
   - component: {fileID: 223627350}
   - component: {fileID: 223627349}
   - component: {fileID: 223627348}
+  - component: {fileID: 223627351}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -317,6 +331,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223627346}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &223627351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223627346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &228818866
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +402,7 @@ GameObject:
   - component: {fileID: 253939200}
   - component: {fileID: 253939199}
   - component: {fileID: 253939198}
+  - component: {fileID: 253939201}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -461,6 +488,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253939196}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &253939201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253939196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &631579827
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +512,7 @@ GameObject:
   - component: {fileID: 631579830}
   - component: {fileID: 631579829}
   - component: {fileID: 631579828}
+  - component: {fileID: 631579832}
   m_Layer: 3
   m_Name: Walls
   m_TagString: Wall
@@ -558,6 +598,21 @@ Transform:
   m_Father: {fileID: 1204626265}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &631579832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631579827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1812fb349d4024881108063faf8b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8787065121486774219}
+  material1: {fileID: 2100000, guid: a851b5937d72b974db1561ce48f80da6, type: 2}
+  material2: {fileID: 2100000, guid: ef4c56945a741204fa5ce937cdbb7966, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +719,7 @@ GameObject:
   - component: {fileID: 707038041}
   - component: {fileID: 707038040}
   - component: {fileID: 707038039}
+  - component: {fileID: 707038042}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -749,6 +805,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707038037}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &707038042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707038037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900489469
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +829,7 @@ GameObject:
   - component: {fileID: 900489473}
   - component: {fileID: 900489472}
   - component: {fileID: 900489471}
+  - component: {fileID: 900489474}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -846,6 +915,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900489469}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &900489474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900489469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &998782384
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +939,7 @@ GameObject:
   - component: {fileID: 998782387}
   - component: {fileID: 998782386}
   - component: {fileID: 998782385}
+  - component: {fileID: 998782389}
   m_Layer: 3
   m_Name: Walls
   m_TagString: Wall
@@ -943,6 +1025,21 @@ Transform:
   m_Father: {fileID: 1204626265}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &998782389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998782384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5306e1fdf93f3ec4bb6465d23c96a8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8787065121486774219}
+  material1: {fileID: 2100000, guid: a851b5937d72b974db1561ce48f80da6, type: 2}
+  material2: {fileID: 2100000, guid: ef4c56945a741204fa5ce937cdbb7966, type: 2}
 --- !u!1 &1023897583
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1052,7 @@ GameObject:
   - component: {fileID: 1023897587}
   - component: {fileID: 1023897586}
   - component: {fileID: 1023897585}
+  - component: {fileID: 1023897588}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -1040,6 +1138,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023897583}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1023897588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023897583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1204626264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,6 +1199,7 @@ GameObject:
   - component: {fileID: 1248671452}
   - component: {fileID: 1248671451}
   - component: {fileID: 1248671450}
+  - component: {fileID: 1248671453}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -1174,6 +1285,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248671448}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1248671453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248671448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321362184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1309,7 @@ GameObject:
   - component: {fileID: 1321362188}
   - component: {fileID: 1321362187}
   - component: {fileID: 1321362186}
+  - component: {fileID: 1321362189}
   m_Layer: 0
   m_Name: Pluto
   m_TagString: Untagged
@@ -1271,6 +1395,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321362184}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1321362189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321362184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1340656010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1419,7 @@ GameObject:
   - component: {fileID: 1340656014}
   - component: {fileID: 1340656013}
   - component: {fileID: 1340656012}
+  - component: {fileID: 1340656015}
   m_Layer: 3
   m_Name: Walls
   m_TagString: Wall
@@ -1368,6 +1505,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340656010}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1340656015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340656010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e930e5326ee37429e0a151d5430534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8787065121486774219}
+  material1: {fileID: 2100000, guid: a851b5937d72b974db1561ce48f80da6, type: 2}
+  material2: {fileID: 2100000, guid: ef4c56945a741204fa5ce937cdbb7966, type: 2}
 --- !u!1 &1432038900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,6 +1532,7 @@ GameObject:
   - component: {fileID: 1432038904}
   - component: {fileID: 1432038903}
   - component: {fileID: 1432038902}
+  - component: {fileID: 1432038905}
   m_Layer: 3
   m_Name: Walls
   m_TagString: Wall
@@ -1465,6 +1618,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432038900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1432038905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432038900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451f680386cebf64bb25c9314d1df786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8787065121486774219}
+  material1: {fileID: 2100000, guid: a851b5937d72b974db1561ce48f80da6, type: 2}
+  material2: {fileID: 2100000, guid: ef4c56945a741204fa5ce937cdbb7966, type: 2}
 --- !u!1 &1722385915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1645,7 @@ GameObject:
   - component: {fileID: 1722385919}
   - component: {fileID: 1722385918}
   - component: {fileID: 1722385917}
+  - component: {fileID: 1722385920}
   m_Layer: 3
   m_Name: Walls
   m_TagString: Wall
@@ -1562,6 +1731,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722385915}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1722385920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722385915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f07345d92231bd4e8e6832b88559ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8787065121486774219}
+  material1: {fileID: 2100000, guid: a851b5937d72b974db1561ce48f80da6, type: 2}
+  material2: {fileID: 2100000, guid: ef4c56945a741204fa5ce937cdbb7966, type: 2}
 --- !u!1 &1821300057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,6 +1757,7 @@ GameObject:
   - component: {fileID: 1821300058}
   - component: {fileID: 1821300060}
   - component: {fileID: 1821300059}
+  - component: {fileID: 1821300061}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -1645,6 +1830,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821300057}
   m_Mesh: {fileID: 4300000, guid: 8aa4a8814028a42fea37772e41f89781, type: 3}
+--- !u!114 &1821300061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821300057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853934758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1854,7 @@ GameObject:
   - component: {fileID: 1853934762}
   - component: {fileID: 1853934761}
   - component: {fileID: 1853934760}
+  - component: {fileID: 1853934763}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1742,6 +1940,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853934758}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1853934763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853934758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094639035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1964,7 @@ GameObject:
   - component: {fileID: 2094639039}
   - component: {fileID: 2094639038}
   - component: {fileID: 2094639037}
+  - component: {fileID: 2094639040}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -1839,6 +2050,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094639035}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2094639040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094639035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2103869270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +2074,7 @@ GameObject:
   - component: {fileID: 2103869274}
   - component: {fileID: 2103869273}
   - component: {fileID: 2103869272}
+  - component: {fileID: 2103869275}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -1936,6 +2160,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103869270}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2103869275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103869270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b654a09ab83c04c85bd08e70468dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2109121102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2227,7 @@ GameObject:
   - component: {fileID: 2114150228}
   - component: {fileID: 2114150227}
   - component: {fileID: 2114150226}
+  - component: {fileID: 2114150230}
   m_Layer: 3
   m_Name: Walls
   m_TagString: Wall
@@ -2076,6 +2313,21 @@ Transform:
   m_Father: {fileID: 1204626265}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2114150230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114150225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0352402cf12f53744be5640f747dd472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8787065121486774219}
+  material1: {fileID: 2100000, guid: a851b5937d72b974db1561ce48f80da6, type: 2}
+  material2: {fileID: 2100000, guid: ef4c56945a741204fa5ce937cdbb7966, type: 2}
 --- !u!1001 &8787065121486774218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2149,3 +2401,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a838661883d191040803c669b2098625, type: 3}
+--- !u!1 &8787065121486774219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8787065123030767121, guid: a838661883d191040803c669b2098625, type: 3}
+  m_PrefabInstance: {fileID: 8787065121486774218}
+  m_PrefabAsset: {fileID: 0}
