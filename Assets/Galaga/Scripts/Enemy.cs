@@ -25,14 +25,14 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("Updating score for PlayerMovement2 instance " + playerInfo.GetComponent<PlayerMovement2>().GetInstanceID());
     }
     void OnCollisionEnter(Collision collision)
     {
-        // if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="Bullet") Explode();
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="Bullet") Explode();
         
         //PlayerMovement2 playerMovement2 = new PlayerMovement2();
-
+        /*
         if(collision.gameObject.tag == "Player"){
             playerInfo.GetComponent<PlayerMovement2>().LoseLife();
             //playerMovement2.LoseLife();
@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
             //playerMovement2.AddScore();
             Explode();
         }
-        
+        */
         //if collides with player, explode
     }
     void Explode()

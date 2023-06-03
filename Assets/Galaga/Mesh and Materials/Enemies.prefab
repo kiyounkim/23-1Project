@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle: {fileID: 4795481568021591124, guid: 16d5c97b076f5b841aecd806e4bfbcf5, type: 3}
-  minspeed: 5
-  maxspeed: 10
+  minspeed: 15
+  maxspeed: 30
   timer: 15
   playerInfo: {fileID: 8787065123030767121, guid: a838661883d191040803c669b2098625, type: 3}
 --- !u!54 &6791815534289095979

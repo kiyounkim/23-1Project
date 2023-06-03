@@ -16,7 +16,6 @@ public class PlayerMovement2 : MonoBehaviour
     public float cooltime = 0.5f;
     private float lastShot = 0.0f;
     public GameObject aim;
-    private UIManager uiManager;
     // Score
     public int score;
 
@@ -30,7 +29,6 @@ public class PlayerMovement2 : MonoBehaviour
         life = 3;
         rigidbody = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
     }
 
     // Update is called once per frame
