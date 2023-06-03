@@ -28,7 +28,21 @@ public class Enemy : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="Bullet") Explode();
+        // if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="Bullet") Explode();
+        
+        PlayerMovement2 playerMovement2 = new PlayerMovement2();
+
+        if(collision.gameObject.tag == "Player"){
+            playerMovement2.LoseLife();
+            Explode();
+        }else if(collision.gameObject.tag == "Bullet"){
+            playerMovement2.AddScore();
+            Explode();
+        }else if(collision.gameObject.tag == "Enemy"){
+            playerMovement2.AddScore();
+            Explode();
+        }
+        
         //if collides with player, explode
     }
     void Explode()

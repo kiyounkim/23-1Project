@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement2 : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class PlayerMovement2 : MonoBehaviour
     public float cooltime = 0.5f;
     private float lastShot = 0.0f;
     public GameObject aim;
+
+    // Score
+    private int score;
+
+    // Lives
+    private int life = 3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,5 +63,20 @@ public class PlayerMovement2 : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
 
+    }
+
+    public void AddScore(){
+        score++;
+        UIManager uiManager = new UIManager();
+        uiManager.UpdateScore(score);
+    }
+
+    public void LoseLife(){
+        life--;
+        UIManager uiManager = new UIManager();
+        uiManager.UpdateLife(life);
+        if(life == 0){
+            SceneManager.LoadScene("EndScene");
+        }
     }
 }
