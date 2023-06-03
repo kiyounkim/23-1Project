@@ -16,18 +16,21 @@ public class PlayerMovement2 : MonoBehaviour
     public float cooltime = 0.5f;
     private float lastShot = 0.0f;
     public GameObject aim;
-
+    private UIManager uiManager;
     // Score
-    private int score;
+    public int score;
 
     // Lives
-    private int life = 3;
+    public int life;
 
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
+        life = 3;
         rigidbody = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
     }
 
     // Update is called once per frame
@@ -66,17 +69,17 @@ public class PlayerMovement2 : MonoBehaviour
     }
 
     public void AddScore(){
+        Debug.Log("AddScore");
         score++;
-        UIManager uiManager = new UIManager();
-        uiManager.UpdateScore(score);
+        Debug.Log(score);
     }
 
     public void LoseLife(){
+        Debug.Log("LoseLife");
         life--;
-        UIManager uiManager = new UIManager();
-        uiManager.UpdateLife(life);
+        Debug.Log(life);
         if(life == 0){
-            SceneManager.LoadScene("EndScene");
+            SceneManager.LoadScene(3);
         }
     }
 }

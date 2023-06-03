@@ -115,6 +115,7 @@ MonoBehaviour:
   minspeed: 5
   maxspeed: 10
   timer: 15
+  playerInfo: {fileID: 8787065123030767121, guid: a838661883d191040803c669b2098625, type: 3}
 --- !u!54 &6791815534289095979
 Rigidbody:
   m_ObjectHideFlags: 0

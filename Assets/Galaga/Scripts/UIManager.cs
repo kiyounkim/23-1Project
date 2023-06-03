@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     private TextMeshProUGUI highScoreText;
     [SerializeField]
     private TextMeshProUGUI lifeText;
-
+    public GameObject player;
     //UIManager uiManager = new UIManager();
 
     // Start is called before the first frame update
@@ -22,12 +22,14 @@ public class UIManager : MonoBehaviour
     {
         scoreText.text = "Score: " + 0;
         highScoreText.text = "High Score: " + highScore;
+        lifeText.text = "Life: " + player.GetComponent<PlayerMovement2>().life.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateScore(player.GetComponent<PlayerMovement2>().score);
+        UpdateLife(player.GetComponent<PlayerMovement2>().life);
     }
 
     public void UpdateScore(int playerScore)
@@ -49,6 +51,6 @@ public class UIManager : MonoBehaviour
 
     public void UpdateLife(int playerLife)
     {
-
+        lifeText.text = "Life: " + playerLife.ToString();
     }
 }

@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public int minspeed;
     public int maxspeed;
     public int timer;
+    public GameObject playerInfo;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,16 +31,19 @@ public class Enemy : MonoBehaviour
     {
         // if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="Bullet") Explode();
         
-        PlayerMovement2 playerMovement2 = new PlayerMovement2();
+        //PlayerMovement2 playerMovement2 = new PlayerMovement2();
 
         if(collision.gameObject.tag == "Player"){
-            playerMovement2.LoseLife();
+            playerInfo.GetComponent<PlayerMovement2>().LoseLife();
+            //playerMovement2.LoseLife();
             Explode();
         }else if(collision.gameObject.tag == "Bullet"){
-            playerMovement2.AddScore();
+            playerInfo.GetComponent<PlayerMovement2>().AddScore();
+            //playerMovement2.AddScore();
             Explode();
         }else if(collision.gameObject.tag == "Enemy"){
-            playerMovement2.AddScore();
+            //playerInfo.GetComponent<PlayerMovement2>().AddScore();
+            //playerMovement2.AddScore();
             Explode();
         }
         

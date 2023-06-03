@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8737141559302429529}
   - component: {fileID: -8851657904062792894}
   - component: {fileID: -4225675781950191644}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f816bdee2d13542aa68c57c0613fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 2000
 --- !u!54 &-4225675781950191644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 3539934658710565604}
   - component: {fileID: 6252061598414765774}
   - component: {fileID: 3184735584261451027}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: MainThrust
   m_TagString: Untagged
   m_Icon: {fileID: 0}

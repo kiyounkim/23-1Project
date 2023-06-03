@@ -14753,6 +14753,8 @@ MonoBehaviour:
   tiltSpeed: 10
   cooltime: 0.5
   aim: {fileID: 0}
+  score: 0
+  life: 3
 --- !u!1 &8787065123196388288
 GameObject:
   m_ObjectHideFlags: 0
