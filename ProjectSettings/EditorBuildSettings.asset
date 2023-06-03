@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Galaga 1.unity
     guid: 1704a4e18097d9d41b6917078904af63
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 72ad80dfbc709304fb3e643b2462700f
   m_configObjects: {}
