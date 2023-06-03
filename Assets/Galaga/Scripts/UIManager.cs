@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
     private int highScore;
 
     [SerializeField]
-    private Text scoreText;
+    private TextMeshProUGUI scoreText;
     [SerializeField]
-    private Text highScoreText;
+    private TextMeshProUGUI highScoreText;
     [SerializeField]
-    private Text lifeText;
+    private TextMeshProUGUI lifeText;
 
-    UIManager uiManager = new UIManager();
+    //UIManager uiManager = new UIManager();
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,8 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore(int playerScore)
     {
-        uiManager.scoreText.text = "Score: " + playerScore.ToString();
+        //uiManager.scoreText.text = "Score: " + playerScore.ToString();
+        scoreText.text = "Score: " + playerScore.ToString();
         UpdateHighScore(playerScore);
     }
 

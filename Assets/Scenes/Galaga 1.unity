@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.00087570626, g: 0.0008860576, b: 0.00070495775, a: 1}
+  m_IndirectSpecularColor: {r: 0.00088456017, g: 0.00089515053, b: 0.00071674015, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2096,6 +2096,7 @@ GameObject:
   - component: {fileID: 1805180734}
   - component: {fileID: 1805180733}
   - component: {fileID: 1805180732}
+  - component: {fileID: 1805180736}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2187,6 +2188,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1805180736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805180731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e861b78793a6408bb17b7515b5ee3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 2001598849}
+  highScoreText: {fileID: 505366776}
+  lifeText: {fileID: 1758781825}
 --- !u!1 &1821300057
 GameObject:
   m_ObjectHideFlags: 0
