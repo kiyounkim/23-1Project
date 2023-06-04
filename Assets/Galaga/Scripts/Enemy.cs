@@ -8,13 +8,14 @@ public class Enemy : MonoBehaviour
     public int minspeed;
     public int maxspeed;
     public int timer;
+    public GameObject target;
     public GameObject playerInfo;
+    public int info;
     // Start is called before the first frame update
     void Start()
     {
         //get player position
-        GameObject player = GameObject.Find("Player");
-        Vector3 playerPosition = player.transform.position;
+        Vector3 playerPosition = target.transform.position;
         //move toward the center with random velocity
         GetComponent<Rigidbody>().velocity = (new Vector3(0,0,0) - transform.position).normalized * Random.Range(minspeed, maxspeed);
         //give it random rotation
@@ -29,30 +30,28 @@ public class Enemy : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="Bullet") Explode();
-        
-        //PlayerMovement2 playerMovement2 = new PlayerMovement2();
-        /*
         if(collision.gameObject.tag == "Player"){
-            playerInfo.GetComponent<PlayerMovement2>().LoseLife();
-            //playerMovement2.LoseLife();
+            //playerInfo.GetComponent<PlayerMovement2>().LoseLife();
+            info = 1;
             Explode();
         }else if(collision.gameObject.tag == "Bullet"){
-            playerInfo.GetComponent<PlayerMovement2>().AddScore();
-            //playerMovement2.AddScore();
+            //playerInfo.GetComponent<PlayerMovement2>().AddScore();
+            info = 2;
             Explode();
         }else if(collision.gameObject.tag == "Enemy"){
-            //playerInfo.GetComponent<PlayerMovement2>().AddScore();
-            //playerMovement2.AddScore();
             Explode();
         }
-        */
+        
         //if collides with player, explode
     }
     void Explode()
     {
         particle = Instantiate(particle, transform.position, Quaternion.identity);
         particle.GetComponent<ParticleSystem>().Play();
+        if(info == 1)
+            playerInfo.GetComponent<PlayerMovement2>().LoseLife();
+        else if(info == 2)
+            playerInfo.GetComponent<PlayerMovement2>().AddScore();
         Destroy(gameObject);
     }
 }

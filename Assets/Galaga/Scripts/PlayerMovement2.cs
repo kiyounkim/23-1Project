@@ -17,16 +17,14 @@ public class PlayerMovement2 : MonoBehaviour
     private float lastShot = 0.0f;
     public GameObject aim;
     // Score
-    public int score;
+    public int score = 0;
 
     // Lives
-    public int life;
+    public int life = 3;
 
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        life = 3;
         rigidbody = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -37,6 +35,7 @@ public class PlayerMovement2 : MonoBehaviour
         Move();
         Turn();
         Attack();
+        //Debug.Log(transform.position.x);
     }
 
     void Turn(){
@@ -67,15 +66,11 @@ public class PlayerMovement2 : MonoBehaviour
     }
 
     public void AddScore(){
-        Debug.Log("AddScore");
         score++;
-        Debug.Log(score);
     }
 
     public void LoseLife(){
-        Debug.Log("LoseLife");
         life--;
-        Debug.Log(life);
         if(life == 0){
             SceneManager.LoadScene(3);
         }

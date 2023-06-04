@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8737141559302429529}
   - component: {fileID: -8851657904062792894}
   - component: {fileID: -4225675781950191644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 3539934658710565604}
   - component: {fileID: 6252061598414765774}
   - component: {fileID: 3184735584261451027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainThrust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
